@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    @media only screen and (max-width: 990px) {
+        .table-section .row .inn-table{
+            width: 48% !important;
+        }
+        .container{
+            max-width: 100%;
+            margin: 0px !important;
+        }
+    }
+    @media only screen and (max-width: 620px) {
+        .table-section .row .inn-table{
+            width: 100% !important;
+        }
+        .odds{
+            font-size: 10px !important;
+        }
+        .match,
+        .sub-plan{
+            font-size: 13px !important;
+        }
+        .days{
+            font-size: 10px !important;
+        }
+        .tab-sec{
+            overflow-x: scroll;
+        }
+        .new-con p {
+            font-size: 14px;
+        }
+        .new-img{
+            height: 150px !important;
+        }
+        .new-sub-sec{
+            width: 100% !important;
+        }
+    }
+    .new-con p {
+        font-size: 15px;
+    }
+    p{
+        line-height: 145%;
+        margin: 0 !important;
+    }
+    .border{
+        border: 1px solid #a09d9d86 !important;
+    }
+    button:hover{
+        background-color: #ffff !important;
+        border: 2px solid #c2d20bea !important;
+        box-shadow: 1px 2px 2px #ffff !important;
+    }
+    .hero-sec a:hover{
+        background-color: transparent !important;
+        border: 2px solid #c2d20bea !important;
+        color: #ffff !important;
+        box-shadow: 1px 1px 1px #ffffffa1, -1px -1px 1px #ffffff99 !important;
+    }
+    .day-sub div:hover{
+        background-color: #ffff00 !important;
+        border: 2px solid #ffff00 !important;
+    }
+</style>
+<body>
+    <div>
+        <section>
+            <div class="col-12 bg-dark position-fixed start-0 end-0 p-2" style="z-index: 999;">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent col-12">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="/">Bet</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/#about">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-white" href="#" aria-expanded="false">
+                                        Solutions
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/#faq">FAQ's</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-white" href="#" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/request-a-demo">Book Demo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="position-relative overflow-hidden hero" style="height: 550px; background-image: url('pexels-pixabay-46798.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode: screen; border-radius: 0 0 25px 25px;">
+            <div class="d-flex align-items-center justify-content-center w-100" style="background-color: rgba(0, 0, 0, 0.9); height: 600px;">
+                <div class="d-flex flex-column align-items-center justify-content-center text-white hero-text-holder p-3" style="height: 100%;">
+                    <div class="text-center mb-4">
+                        <h4 class="fs-1">Get sure predictions<br />From the best prediction website</h4>
+                    </div>
+                    <div class="text-center mb-4 col-lg-6 col-12">
+                        <p>Effortlessly hire and manage top-tier senior remote developers globally. We handle all HR and EOR services, ensuring seamless team integration.</p>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 hero-sec">
+                        <a href="/outsource" class="d-flex align-items-center justify-content-center text-dark fw-bold bg-warning text-decoration-none" style="border-radius: 20px; height: 45px; width: 200px;">Outsource Project</a>
+                        <a href="/request-a-demo" class="d-flex align-items-center justify-content-center text-dark fw-bold bg-warning text-decoration-none" style="border-radius: 20px; height: 45px; width: 200px;">Book a demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-lg-auto p-3 m-0 p-lg-4">
+            <div class="col-12 row m-0 p-0 justify-content-center">
+                <div class="row mx-0 p-0 align-items-center justify-content-center bg-warning fw-bold text-center fs-3 rounded-3" style="height: 120px; width: 80%; background-size: cover; background-blend-mode: screen; opacity: 75%;">ADS Space</div>
+            </div>
+        </section>
+        <section class="bg-white position-relative" style="height: 100%">
+            <div class="container">
+                <div class="row justify-content-center col-12 mx-0 px-0 gap-3">
+                    <div class="col-12 row gap-lg-3 gap-1 py-lg-3 px-lg-2 px-0 position-relative overflow-hidden">
+                        <div class="row col-12 justify-content-center py-lg-3 py-2 gap-lg-4 gap-2 day-sub">
+                            <div class="fw-bold p-2 text-center col-lg-2 col-3 days" style="border: 2px solid #838308; border-radius: 50px; cursor: pointer; font-size: 16px;">
+                                <P class="m-0">Yesterday</P>
+                            </div>
+                            <div class="fw-bold p-2 text-center col-lg-2 col-3 days" style="border: 2px solid #ffff00; border-radius: 50px; cursor: pointer; background-color: #ffff00; font-size: 16px;">
+                                <p class="m-0">Today</p>
+                            </div>
+                            <div class="fw-bold p-2 text-center col-lg-2 col-3 days" style="border: 2px solid #838308; border-radius: 50px; cursor: pointer; font-size: 16px;">
+                                <p class="m-0">Tomorrow</p>
+                            </div>
+                        </div>
+                        <div class="col-12 table-section px-0">
+                            <div class="row col-12 gap-3 mx-0 px-0">
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 12px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center chan" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 13px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 13px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 13px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 13px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 inn-table" style="border: 1px solid #000000; border-radius: 70px; width: 31.33%;">
+                                    <div class="d-flex align-items-center justify-content-between col-12 m-0 px-3 py-1">
+                                        <div class="text-uppercase" style="color: rgb(4, 4, 187);">
+                                            <h4 class="m-0 fw-bold" style="font-size: 13px;">Club friendlies</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="m-0" style="font-size: 12px;">Time</p>
+                                            <p class="m-0" style="font-weight: 500; font-size: 13px;">20:45</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between ps-3">
+                                        <div class="p-1 text-center justify-content-center d-flex align-items-center" style="background-color: #000dffe6; width: 60px; height: 25px; border-radius: 50px; border: 2px solid rgba(245, 245, 245, 0.76);">
+                                            <span class="text-white fw-bold text-center" style="font-size: 13px;">1X<span style="color: rgba(245, 245, 245, 0.606);">BET</span></span>
+                                        </div>
+                                        <div class="text-uppercase p-1 rounded-3" style="background-color: #ffff00; width: fit-content;">
+                                            <h5 class="m-0 fw-bold" style="font-size: 14px;">Prediction>+2.5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center col-12 gap-5 mt-1 match" style="font-size: 14px; font-weight: 500;">
+                                        <span>FC Noah</span>
+                                        <span class="fw-bold">1 : 1</span>
+                                        <span>AEK Athens</span>
+                                    </div>
+                                    <div class="d-flex col-12 gap-3 justify-content-center mt-2 px-3">
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                        <div class="text-center odds" style="width: 90px; border-radius: 50px; border:1px solid #000000; font-size: 12px;">
+                                            <p class="m-0">Home : <span class="fw-bold odds" style="font-size: 12px;">2.30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 row align-items-center justify-content-center p-3 gap-3" style="height: 100%; border-radius: 12px;">
+                        <div class="d-flex align-items-center flex-column gap-2 col-12 p-0">
+                            <h3 class="m-0 fs-4 text-capitalize">Subcription plans</h3>
+                            <p class="m-0 sub-plan text-center">Be the first to get access to acurate predictions by choosing a plan that fit you</p>
+                        </div>
+                        <div class="row align-items-center gap-3 p-0 col-12">
+                            <div class="d-flex align-items-end px-2 py-3 flex-column gap-3 shadow" style="border-radius: 10px; width: 350px; border: 1px solid rgb(0, 0, 0);">
+                                <div class="d-flex align-items-center justify-content-between col-12">
+                                    <span class="fs-4 text-uppercase">Starter Plan</span>
+                                    <span class="fs-5">&#8358; 20,000</span>
+                                </div>
+                                <div class="col-12">
+                                    <p class="m-0" style="font-size: 13.5px;">Users of this plan have access to atleast 3 different games as well as upto 2 Odds predictions. <br> Benefits are:</p>
+                                    <hr>
+                                    <ul class="m-0" style="font-size: 13px;">
+                                        <li class="m-0">Access to 3 games monthly</li>
+                                        <li class="m-0">Predictions up to 2 Odds</li>
+                                        <li class="m-0">No updates</li>
+                                        <li class="m-0">No over games</li>
+                                        <li class="m-0">No weekly games</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 d-flex align-items-center justify-content-end">
+                                    <button class="border-0 bg-warning" style="width: 150px; height: 45px; border-radius: 8px;">Join Starter Plan</button>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end px-2 py-3 flex-column gap-3 shadow" style="border-radius: 10px; width: 350px; border:1px solid rgb(0, 0, 0);">
+                                <div class="d-flex align-items-center justify-content-between col-12">
+                                    <span class="fs-4 text-uppercase">VIP Plan</span>
+                                    <span class="fs-5">&#8358; 80,000</span>
+                                </div>
+                                <div class="col-12">
+                                    <p class="m-0" style="font-size: 13.5px;">Users of this plan have access to VIP's benefits that fits their needs. <br> Benefits are:</p>
+                                    <hr>
+                                    <ul class="m-0" style="font-size: 13px;">
+                                        <li class="m-0">Access to 50 games weekly</li>
+                                        <li class="m-0">Predictions up to 4 Odds</li>
+                                        <li class="m-0">2 weekly updates on games</li>
+                                        <li class="m-0">Over games</li>
+                                        <li class="m-0">Newsletters</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 d-flex align-items-center justify-content-end">
+                                    <button class="border-0 fw-regular bg-warning" style="width: 150px; height: 45px; border-radius: 8px;">Join VIP Plan</button>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end px-2 py-3 flex-column gap-3 shadow" style="border-radius: 10px; width: 350px; border:1px solid rgb(0, 0, 0);">
+                                <div class="d-flex align-items-center justify-content-between col-12">
+                                    <span class="fs-4 text-uppercase">Elite Plan</span>
+                                    <span class="fs-5">&#8358; 1,380,000</span>
+                                </div>
+                                <div class="col-12">
+                                    <p class="m-0" style="font-size: 13.5px;">Users of this plan have access to luxirious and business benefits. <br> Benefits are:</p>
+                                    <hr>
+                                    <ul class="m-0" style="font-size: 13px;">
+                                        <li class="m-0">Access to 350 games weekly</li>
+                                        <li class="m-0">Muiltiple Predictions</li>
+                                        <li class="m-0">Weekly updates on games</li>
+                                        <li class="m-0">Access to 1 free month advert on our site</li>
+                                        <li class="m-0">Opportunity to talk with our technician</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 d-flex align-items-center justify-content-end">
+                                    <button class="border-0 fw-regular bg-warning" style="width: 150px; height: 45px; border-radius: 8px;">Join Elite Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-lg-auto p-3 m-0">
+            <div class="col-12 tab-sec">
+                <table class="table caption-top text-center col-12">
+                    <caption class="col-12 text-center fs-lg-2 fs-5 text-uppercase text-dark fw-bold">Subcription tips result</caption>
+                    <thead class="bg-warning border">
+                        <tr>
+                            <th class="border">Sunday</th>
+                            <th class="border">Monday</th>
+                            <th class="border">Tuesday</th>
+                            <th class="border">Wednesday</th>
+                            <th class="border">Thursday</th>
+                            <th class="border">Friday</th>
+                            <th class="border">Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border">15</td>
+                            <td class="border">12</td>
+                            <td class="border">22</td>
+                            <td class="border">19</td>
+                            <td class="border">30</td>
+                            <td class="border">1</td>
+                            <td class="border">8</td>
+                        </tr>
+                        <tr>
+                            <td class="border"><i class="fa fa-check" style="color: rgb(3, 215, 3); font-size: 14px;"></i></td>
+                            <td class="border"></td>
+                            <td class="border"><i class="fa fa-check" style="color: rgb(3, 215, 3); font-size: 14px;"></i></td>
+                            <td class="border"></td>
+                            <td class="border"><i class="fa fa-check" style="color: rgb(3, 215, 3); font-size: 14px;"></i></td>
+                            <td class="border"></td>
+                            <td class="border"><i class="fa fa-check" style="color: rgb(3, 215, 3); font-size: 14px;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="py-4 px-0">
+            <div class="position-relative container mx-lg-auto mx-0 px-lg-5 p-0">
+                <div class="position-relative row gap-4 col-12 text-left align-items-lg-center justify-content-center m-0 px-3">
+                    <div class="col-12">
+                        <h2 class="text-capitalize fs-lg-3 fs-5">Get latest news on sports happening</h2>
+                    </div>
+                    <div class="col-12 row gap-4 mx-0 p-0">
+                        <div class="col-12 p-3 rounded-3 d-flex flex-column gap-3 shadow-sm" style="background-color: whitesmoke;">
+                            <div class="col-12">
+                                <div class="position-relative overflow-hidden rounded" style="width: 100%; height: 400px;">
+                                    <img class="img-fluid w-100" src="../bang/istockphoto-470728334-1024x1024.jpg" alt="" style="height: 400px;">
+                                    <div class="position-absolute top-0 bottom-0 h-100 d-flex align-items-end justify-content-start end-0 start-0">
+                                        <p class="m-0 bg-dark text-white p-2" style="border-radius: 0px 15px 0px 0px;">16th September 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div>
+                                    <h3 class="m-0 fs-4">When will Premier League resume</h3>
+                                </div>
+                                <hr class="m-0">
+                                <div class="d-flex align-items-center gap-lg-5 gap-2" style="font-size: 10px;">
+                                    <div>
+                                        <i class="fa fa-user text-warning"></i>
+                                        <span>Posted by <span class="text-dark fw-bold">Kene Willson</span></span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-table text-warning"></i>
+                                        <span>Date : <span class="text-dark fw-bold">16th September 2025</span></span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-clock-o text-warning"></i>
+                                        <span>Time : <span class="text-dark fw-bold">12:00 AM</span></span>
+                                    </div>
+                                </div>
+                                <hr class="m-0">
+                            </div>
+                            <div class="d-flex flex-column gap-3 new-con">
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex veritatis soluta enim illum delectus modi ab eligendi rerum, mollitia optio perferendis consequuntur culpa deserunt alias excepturi reprehenderit repellat corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptatem eveniet ad doloribus aut est sed aliquam corporis quae assumenda. Alias optio itaque cumque sit quidem! Magni, labore? Amet, officiis.</p>
+                                </div>
+                                <div class="text-dark p-2 bg-warning">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur voluptatibus suscipit veritatis unde ratione tenetur nulla, explicabo ullam? Similique veritatis ratione unde mollitia error quae quam nemo reprehenderit deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sapiente perspiciatis, vero tempora dolor eaque dolore id eos alias iure incidunt porro voluptatem sunt, est doloremque accusamus? Eaque, consequatur mollitia.</p>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo velit qui minima illum voluptate odit dicta expedita, minus facilis beatae culpa voluptatum, unde enim. Maiores iure expedita ut ratione? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nemo quasi iste, neque tenetur libero a pariatur recusandae iure dolore quisquam rem eligendi minus qui? Architecto commodi consectetur consequatur tempora.</p>
+                                </div>
+                                <div class="col-12 d-flex align-items-center justify-content-between new-img" style="height: 220px;">
+                                    <img src="../bang/pexels-pixabay-209841.jpg" alt="" style="width: 48%; height: 100%;">
+                                    <img src="../bang/pexels-pixabay-46798.jpg" alt="" style="width: 45%; height: 100%;">
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores fugit laudantium earum, rerum ipsum, dolores assumenda debitis adipisci nesciunt illo id beatae voluptas, nisi quas vero dolor possimus! Deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum doloremque maiores reiciendis, atque nostrum minima iure deleniti veritatis quis expedita omnis esse repellat eius ratione perferendis distinctio consequatur voluptatem unde?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 row mx-0 p-0 gap-2">
+                            <div class="text-capitalize">
+                                <h3 class="m-0">Other news</h3>
+                            </div>
+                            <div class="row mx-0 p-0 col-12 gap-3">
+                                <div class="d-flex gap-2 overflow-hidden shadow-sm p-0 new-sub-sec" style="background-color: whitesmoke; height: 150px; border-radius: 7px; width: 32%;">
+                                    <div class="overflow-hidden" style="width: 150px; height: 150px;">
+                                        <img class="img-fluid" src="../bang/soccer-player-field-with-ball.jpg" alt="" style="height: 150px;">
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end gap-3 p-2">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div>
+                                                <p class="m-0 fs-6 fw-bold">When will European League Start?</p>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="d-flex align-items-center gap-2 col-12" style="font-size: 13px;">
+                                                <div>
+                                                    <i class="fa fa-table text-warning"></i>
+                                                    <span class="text-dark fw-regular">2025-06-19</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-clock-o text-warning"></i>
+                                                    <span class="text-dark fw-regular">12:00 AM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="border-0 text-dark bg-warning" style=" height: 40px; width: 120px; border-radius: 6px;">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 overflow-hidden shadow-sm p-0 new-sub-sec" style="background-color: whitesmoke; height: 150px; border-radius: 7px; width: 32%;">
+                                    <div class="overflow-hidden" style="width: 150px; height: 150px;">
+                                        <img class="img-fluid" src="../bang/soccer-player-field-with-ball.jpg" alt="" style="height: 150px;">
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end gap-3 p-2">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div>
+                                                <p class="m-0 fs-6 fw-bold">When will European League Start?</p>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="d-flex align-items-center gap-2 col-12" style="font-size: 13px;">
+                                                <div>
+                                                    <i class="fa fa-table text-warning"></i>
+                                                    <span class="text-dark fw-regular">2025-06-19</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-clock-o text-warning"></i>
+                                                    <span class="text-dark fw-regular">12:00 AM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="border-0 text-dark bg-warning" style=" height: 40px; width: 120px; border-radius: 6px;">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 overflow-hidden shadow-sm p-0 new-sub-sec" style="background-color: whitesmoke; height: 150px; border-radius: 7px; width: 32%;">
+                                    <div class="overflow-hidden" style="width: 150px; height: 150px;">
+                                        <img class="img-fluid" src="../bang/soccer-player-field-with-ball.jpg" alt="" style="height: 150px;">
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end gap-3 p-2">
+                                        <div class="d-flex flex-column gap-2">
+                                            <div>
+                                                <p class="m-0 fs-6 fw-bold">When will European League Start?</p>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="d-flex align-items-center gap-2 col-12" style="font-size: 13px;">
+                                                <div>
+                                                    <i class="fa fa-table text-warning"></i>
+                                                    <span class="text-dark fw-regular">2025-06-19</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-clock-o text-warning"></i>
+                                                    <span class="text-dark fw-regular">12:00 AM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="border-0 text-dark bg-warning" style=" height: 40px; width: 120px; border-radius: 6px;">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <div>
+                                <button class="border-0 text-dark bg-warning" style=" height: 40px; width: 250px; border-radius: 6px;">Read More <i class="fa fa-external-link"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-5 bg-warning">
+            <footer class="d-flex align-items-start flex-column gap-3 col-12 p-2 footer">
+                <div class="container footer-container">
+                    <div class="row footer-content">
+                        <div class="col-md-3 first-footer-content">
+                            <div class="first-content-logo mb-3">
+                                <h3>Bet</h3>
+                            </div>
+                            <div class="first-content-ctc">
+                                <h5>Contact us</h5>
+                                <a href="mailto:support@pedxo.com" class="text-dark text-decoration-none">support@pedxo.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 texts-link-holder">
+                            <div class="row">
+                                <div class="col-md-4 second-footer-content">
+                                    <div class="heading mb-3">
+                                        <h4>Company</h4>
+                                    </div>
+                                    <nav class="nav-links-holder">
+                                        <ul class="list-unstyled nav-links-content">
+                                            <li><a href="/#about" class="text-dark text-decoration-none">About</a></li>
+                                            <li><a href="/work" class="text-dark text-decoration-none">Work at a Startup</a></li>
+                                            <li><a href="mailto:support@pedxo.com" class="text-dark text-decoration-none">Email us</a></li>
+                                            <li><a href="/request-a-demo" class="text-dark text-decoration-none">Speak with an Expert</a></li>
+                                            <li><a href="/#faq" class="text-dark text-decoration-none">FAQ's</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4 second-footer-content">
+                                    <div class="heading mb-3">
+                                        <h4>Company</h4>
+                                    </div>
+                                    <nav class="nav-links-holder">
+                                        <ul class="list-unstyled nav-links-content">
+                                            <li><a href="/#about" class="text-dark text-decoration-none">About</a></li>
+                                            <li><a href="/work" class="text-dark text-decoration-none">Work at a Startup</a></li>
+                                            <li><a href="mailto:support@pedxo.com" class="text-dark text-decoration-none">Email us</a></li>
+                                            <li><a href="/request-a-demo" class="text-dark text-decoration-none">Speak with an Expert</a></li>
+                                            <li><a href="/#faq" class="text-dark text-decoration-none">FAQ's</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4 third-footer-content">
+                                    <div class="heading mb-3">
+                                        <h4>Services</h4>
+                                    </div>
+                                    <nav class="nav-links-holder">
+                                        <ul class="list-unstyled nav-links-content">
+                                            <li><a href="/hire" class="text-dark text-decoration-none">Hire Talents</a></li>
+                                            <li><a href="/jobs" class="text-dark text-decoration-none">Find Jobs</a></li>
+                                            <li><a href="/outsource" class="text-dark text-decoration-none">Outsource Projects</a></li>
+                                            <li><a href="/request-a-demo" class="text-dark text-decoration-none">Book a Demo</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 fourth-footer-content">
+                            <div class="heading mb-3">
+                                <h4>Socials</h4>
+                            </div>
+                            <div class="social-icons fs-4">
+                                <a href="https://web.facebook.com/people/Pedxo/100090410366859" target="_blank" rel="noreferrer" class="text-dark text-decoration-none me-3"><i class="fa fa-facebook-square" aria-label="Facebook"></i></a>
+                                <a href="https://www.instagram.com/usepedxo" target="_blank" rel="noreferrer" class="text-dark text-decoration-none me-3"><i class="fa fa-instagram" aria-label="Instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/pedxo" target="_blank" rel="noreferrer" class="text-dark text-decoration-none me-3"><i class="fa fa-linkedin-square" aria-label="LinkedIn"></i></a>
+                                <a href="https://twitter.com/Pedxo" target="_blank" rel="noreferrer" class="text-dark text-decoration-none"><i class="fa fa-twitter-square" aria-label="Twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sub-footer-content mt-4">
+                        <div class="col-12">
+                            <hr />
+                        </div>
+                        <div class="d-flex justify-content-between w-100">
+                            <h5 class="fs-6">Privacy Policy</h5>
+                            <h5 class="fs-6">&copy; <span id="year"></span> Bet. All rights reserved.</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+<script>
+    const automateCurrentYear = () => {
+        const year = new Date()
+        document.getElementById("year").textContent = year.getFullYear()
+    }
+
+    automateCurrentYear()
+</script>
+</html>
